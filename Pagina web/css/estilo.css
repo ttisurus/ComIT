@@ -167,7 +167,7 @@ nav .enlaces a:hover{
 }
 
 .logo, .logo img{ 
-    height:80px;
+    height:130px;
 }
 
 .icono{
@@ -348,13 +348,13 @@ footer{
 }
 
 .marca-logo{
-  width: 40%;
+  width: 70%;
   margin: auto;
   margin-bottom: var(--espacios);
 }
 
 .marca-logo img{
-  width: 100%;
+  width: 700px;
 }
 
 .iconos{

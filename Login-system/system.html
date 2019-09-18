@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../Pagina web/vendor/datatables/DataTables-1.10.18/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../Pagina web/vendor/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
     <title>ArrowDesingSystem</title>
 
     <link rel="stylesheet" href="css/system.css">
@@ -47,7 +46,7 @@
     </nav>
 
 <div class="container">
-    <table class="table table-dark table-hover">        
+    <table class="table table-dark table-hover" id="table" class="order-column" style="width:100%">        
         <thead>
             <tr>
                 <th>Codigo</th>
@@ -57,26 +56,31 @@
                 <th>@</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
-            </tr>
-            <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>mary@example.com</td>
-            </tr>
-            <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-            </tr>
+        <tbody id="tablaContenido">
+            
         </tbody>
     </table>
+    <br>
+    <label for="">OTRA</label>
+    <table class="table table-dark table-hover" id="example" class="table stripe" style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="../Pagina web/vendor/datatables/datatables.min.js"></script>
+<script src="js/lista.js"></script>
 </body>
 
 </html>

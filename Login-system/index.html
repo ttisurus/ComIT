@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <title>ArrowDesingLogin</title>
+
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
     <div class="login_box">
         <img class="logo" src="img/logoad.png" alt="logo">
@@ -18,12 +26,14 @@
             <label for="password">Password</label>
             <input type="password" placeholder="Enter Password" required>
             
+            <form action="../Login-system/system.html">
             <input type="submit" value="Log In">
-            <a href="system.html">Log into system</a>
-
+            </form>
+                        
             <br><a href="#">Lost your password?</a><br>
             <a href="#">Don't have account?</a>
         </form>
     </div>
 </body>
+
 </html>

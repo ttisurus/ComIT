@@ -4,109 +4,109 @@ var clientes = [
 
     {
         "codigocliente": "1",
-        "nombre_razonsocial": "Primero",
+        "razonsocial": "Primero",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "2",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "3",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "4",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "5",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "6",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "7",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "8",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "9",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "10",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "11",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "12",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "13",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "14",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "15",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "16",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "17",
-        "nombre_razonsocial": "juan",
+        "razonsocial": "juan",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
     }, {
         "codigocliente": "18",
-        "nombre_razonsocial": "Ultimo",
+        "razonsocial": "Ultimo",
         "direccion": "escalabrini ortiz",
         "telefono": 444444,
         "mail": "queterecontra@gmail.com"
@@ -121,7 +121,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("#tablaContenido").html("")
     for (i = 0; i < clientes.length; i++) {
-        $('#tablaContenido').append('<tr><td>' + clientes[i].codigocliente + '</td><td>' + clientes[i].nombre_razonsocial + '</td><td>' + clientes[i].direccion + '</td><td>' + clientes[i].telefono + '</td><td>' + clientes[i].mail + '</td></tr>')
+        $('#tablaContenido').append('<tr><td>' + clientes[i].codigocliente + '</td><td>' + clientes[i].razonsocial + '</td><td>' + clientes[i].direccion + '</td><td>' + clientes[i].telefono + '</td><td>' + clientes[i].mail + '</td></tr>')
     }
 });
 

@@ -1,0 +1,10 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.img-oi{
+    width: 300px;
+    height: 600px;
+    object-fit: cover;
+
+}

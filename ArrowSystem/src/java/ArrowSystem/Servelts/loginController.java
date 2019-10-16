@@ -1,23 +1,36 @@
-
 package ArrowSystem.Servelts;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 public class loginController extends HttpServlet {
-
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-          
+
+            String user = request.getParameter("user");
+            String pass = request.getParameter("pass");
+            System.out.println("En el servlet validacion");
+            System.out.println("user: " + user);
+            System.out.println("pass: " + pass);
+            
+            
+            try {                               
+                // llama funcion en el modelo que consulte si son iguales los usuarios y pass, porque tiene que ver con la base de datos que corrobore los datos 
+                //
+                
+                // Redirecciona a la pagina siguiente al corroborar el login 
+                request.getRequestDispatcher("system.html").forward(request, response);
+                
+            } catch (Exception e) {
+            }
         }
     }
 

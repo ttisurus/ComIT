@@ -18,8 +18,15 @@ public class Consultas extends Conexion
         ResultSet rs;
         String Consulta = "select * from usuarios";
                 //Lo que traigo de consultas, deberia ser el contenido de la tabla
+                //En este caso el usuario y contraseña
         rs = st.executeQuery(Consulta);
+        System.out.println("En consultas validacion");
         
+        while (rs.next()) {
+            if (user.equals(rs.getString("Usuario")) && pass.equals(rs.getString("Contrasena"))) {
+                return true;
+            }
+        }
                 
         return true;
     }

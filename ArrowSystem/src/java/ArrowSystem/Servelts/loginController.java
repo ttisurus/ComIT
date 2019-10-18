@@ -1,7 +1,7 @@
 package ArrowSystem.Servelts;
 
+import ArrowSystem.Conexion.Consultas;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -13,61 +13,42 @@ public class loginController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
 
-            String user = request.getParameter("user");
-            String pass = request.getParameter("pass");
-            System.out.println("En el servlet validacion");
-            System.out.println("user: " + user);
-            System.out.println("pass: " + pass);
-            
-            
-            try {                               
-                // llama funcion en el modelo que consulte si son iguales los usuarios y pass, porque tiene que ver con la base de datos que corrobore los datos 
-                //
-                
-                // Redirecciona a la pagina siguiente al corroborar el login 
+        String user = request.getParameter("user");
+        String pass = request.getParameter("pass");
+        System.out.println("En el servlet login controller");
+        System.out.println("user: " + user);
+        System.out.println("pass: " + pass);
+        Consultas con = new Consultas();
+
+        try {
+            System.out.println("En el if");
+            if (con.Autenticacion(user, pass)) {
                 request.getRequestDispatcher("system.html").forward(request, response);
-                
-            } catch (Exception e) {
+                System.out.println("En el if del login controller");
+            } else {
+                request.getRequestDispatcher("index.html").forward(request, response);
+                System.out.println("En el else del login controller");
             }
+
+        } catch (IOException | ClassNotFoundException | SQLException | ServletException e) {
+
         }
+
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
 
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
 
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
     @Override
     public String getServletInfo() {
         return "Short description";

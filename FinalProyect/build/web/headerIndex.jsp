@@ -2,7 +2,9 @@
     <nav id="nav" class="nav1">
         <div class="contenedor-nav">
             <div class="logo">
+                <a href="index.jsp">
                 <img src="img/logoad.png" alt="logo">
+                </a>
             </div>
             <div class="enlaces" id="enlaces">
                 <a href="index.jsp" id="enlace-inicio" class="btn-header">Inicio</a>
